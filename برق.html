@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رشته برق صنعتی | هنرستان کار و دانش آل آقا</title>
+    
+    <!-- متاتگ‌های SEO -->
+    <meta name="description" content="آشنایی با رشته برق صنعتی هنرستان کار و دانش گرددشگری - آموزش تخصصی برق صنعتی، اتوماسیون، کنترل سیستم‌های الکتریکی و تعمیرات با امکانات پیشرفته و اساتید مجرب">
+    <meta name="keywords" content="رشته برق صنعتی، اتوماسیون صنعتی، کنترل سیستم‌های الکتریکی، تعمیرات برق صنعتی، هنرستان کار و دانش برق">
+    
+    <!-- لینک‌های CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #4361ee;
+            --secondary-color: #3a0ca3;
+            --accent-color: #4cc9f0;
+            --light-color: #f8f9fa;
+            --dark-color: #212529;
+            --success-color: #2ecc71;
+            --warning-color: #f39c12;
+            --gray-color: #6c757d;
+            --light-gray: #e9ecef;
+        }
+        
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-color);
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Hero Section */
+        .course-hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 120px 0 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .course-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('images/tourism-pattern.svg');
+            background-size: cover;
+            opacity: 0.1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .hero-content p {
+            font-size: 1.25rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .hero-btns {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            background-color: white;
+            color: var(--primary-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--light-gray);
+        }
+        
+        .btn-outline {
+            border: 2px solid white;
+            color: white;
+        }
+        
+        .btn-outline:hover {
+            background-color: white;
+            color: var(--primary-color);
+        }
+        
+        /* Features Section */
+        .features-section {
+            padding: 100px 0;
+            background-color: white;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--dark-color);
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.25rem;
+            color: var(--gray-color);
+            margin-bottom: 60px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            background-color: var(--light-gray);
+            color: var(--primary-color);
+        }
+        
+        .feature-icon i {
+            font-size: 2rem;
+        }
+        
+        .feature-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--dark-color);
+        }
+        
+        .feature-text {
+            color: var(--gray-color);
+            margin-bottom: 0;
+        }
+        
+        /* Curriculum Section */
+        .curriculum-section {
+            padding: 100px 0;
+            background-color: var(--light-color);
+        }
+        
+        .curriculum-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .tab-btn {
+            padding: 15px 30px;
+            border: none;
+            background: none;
+            font-family: 'Vazirmatn', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--gray-color);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .tab-btn::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background-color: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+        
+        .tab-btn.active {
+            color: var(--primary-color);
+        }
+        
+        .tab-btn.active::after {
+            width: 100%;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .curriculum-item {
+            background-color: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .curriculum-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .curriculum-title {
+            font-size: 1.25rem;
+            margin: 0;
+            color: var(--dark-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .curriculum-title i {
+            color: var(--primary-color);
+        }
+        
+        .curriculum-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.9rem;
+            color: var(--gray-color);
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .curriculum-desc {
+            color: var(--gray-color);
+            margin-bottom: 0;
+        }
+        
+        /* Equipment Section */
+        .equipment-section {
+            padding: 100px 0;
+            background-color: white;
+        }
+        
+        .equipment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .equipment-card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .equipment-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .equipment-image {
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+        }
+        
+        .equipment-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .equipment-card:hover .equipment-image img {
+            transform: scale(1.1);
+        }
+        
+        .equipment-info {
+            padding: 25px;
+            background-color: white;
+        }
+        
+        .equipment-title {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            color: var(--dark-color);
+        }
+        
+        .equipment-desc {
+            color: var(--gray-color);
+            margin-bottom: 0;
+        }
+        
+        /* Jobs Section */
+        .jobs-section {
+            padding: 100px 0;
+            background-color: var(--light-color);
+        }
+        
+        .jobs-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .job-item {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .job-item:hover {
+            transform: translateY(-10px);
+        }
+        
+        .job-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            color: white;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        }
+        
+        .job-icon i {
+            font-size: 1.75rem;
+        }
+        
+        .job-title {
+            font-size: 1.25rem;
+            margin-bottom: 15px;
+            color: var(--dark-color);
+        }
+        
+        .job-desc {
+            color: var(--gray-color);
+            margin-bottom: 20px;
+        }
+        
+        .job-salary {
+            font-weight: 500;
+            color: var(--success-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        /* Instructors Section */
+        .instructors-section {
+            padding: 100px 0;
+            background-color: white;
+        }
+        
+        .instructors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .instructor-card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .instructor-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .instructor-image {
+            width: 100%;
+            height: 280px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .instructor-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .instructor-social {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .instructor-card:hover .instructor-social {
+            transform: translateY(0);
+        }
+        
+        .instructor-social a {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .instructor-social a:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .instructor-info {
+            padding: 25px;
+            text-align: center;
+            background-color: white;
+        }
+        
+        .instructor-name {
+            font-size: 1.25rem;
+            margin-bottom: 5px;
+            color: var(--dark-color);
+        }
+        
+        .instructor-position {
+            font-size: 0.9rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .instructor-bio {
+            color: var(--gray-color);
+            margin-bottom: 0;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+        }
+        
+        .cta-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta-text {
+            font-size: 1.25rem;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.9;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .curriculum-tabs {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .tab-btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header would go here -->
+
+    <!-- Hero Section -->
+    <section class="course-hero">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>رشته برق صنعتی</h1>
+                <p>آموزش تخصصی برق صنعتی، اتوماسیون، کنترل سیستم‌های الکتریکی و تعمیرات با پیشرفته‌ترین امکانات و اساتید مجرب</p>
+                <div class="hero-btns">
+                    <a href="#curriculum" class="btn btn-primary">سرفصل‌های آموزشی</a>
+                    <a href="index.html" class="btn btn-outline">ثبت نام</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">چرا رشته برق صنعتی؟</h2>
+            <p class="section-subtitle" data-aos="fade-up">برق صنعتی یکی از پرکاربردترین رشته‌ها در صنایع مختلف است و متخصصان این حوزه همواره مورد نیاز هستند</p>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="feature-title">بازار کار گسترده</h3>
+                    <p class="feature-text">متخصصان برق صنعتی در صنایع مختلف از جمله نفت، گاز، پتروشیمی، خودروسازی و تولیدی‌ها مشغول به کار می‌شوند.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="feature-title">امنیت شغلی</h3>
+                    <p class="feature-text">با توجه به نیاز روزافزون به برق صنعتی، متخصصان این رشته از امنیت شغلی بالایی برخوردار هستند.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="feature-title">فرصت‌های پیشرفت</h3>
+                    <p class="feature-text">امکان ارتقا به سمت‌های مدیریتی مانند سرپرست فنی، مدیر پروژه یا مهندس برق در شرکت‌های بزرگ وجود دارد.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3 class="feature-title">کار در صنایع مختلف</h3>
+                    <p class="feature-text">امکان فعالیت در صنایع مختلف از جمله نفت، گاز، پتروشیمی، خودروسازی و تولیدی‌ها.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="feature-title">مهارت‌های عملی</h3>
+                    <p class="feature-text">آموزش مهارت‌های عملی مانند نصب، راه‌اندازی و تعمیر سیستم‌های برق صنعتی.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3 class="feature-title">درآمد مناسب</h3>
+                    <p class="feature-text">متخصصان برق صنعتی معمولاً از درآمد بالاتر از میانگین جامعه برخوردار هستند.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section id="curriculum" class="curriculum-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">سرفصل‌های آموزشی</h2>
+            <p class="section-subtitle" data-aos="fade-up">آنچه در طول دوره سه ساله رشته برق صنعتی خواهید آموخت</p>
+            
+            <div class="curriculum-tabs" data-aos="fade-up">
+                <button class="tab-btn active" data-target="year1">پایه دهم</button>
+                <button class="tab-btn" data-target="year2">پایه یازدهم</button>
+                <button class="tab-btn" data-target="year3">پایه دوازدهم</button>
+                <button class="tab-btn" data-target="workshops">کارگاه‌های تخصصی</button>
+            </div>
+            
+            <div class="tab-content active" id="year1">
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-bolt"></i> اصول برق صنعتی</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۱۱۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم اول</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">آشنایی با مفاهیم پایه برق صنعتی، مدارهای الکتریکی، اصول کار با تجهیزات برقی و ایمنی در کار با برق.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-cogs"></i> مدارهای الکتریکی پیشرفته</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۱۲۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم دوم</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">آموزش طراحی و تحلیل مدارهای الکتریکی پیشرفته، کار با قطعات الکترونیکی و شبیه‌سازی مدارها.</p>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="year2">
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-industry"></i> کنترل سیستم‌های الکتریکی</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۱۲۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم اول</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">آموزش کنترل سیستم‌های الکتریکی، کار با PLC و اتوماسیون صنعتی.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-tools"></i> تعمیرات برق صنعتی</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۱۰۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم دوم</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">آموزش تعمیرات سیستم‌های برق صنعتی، عیب‌یابی و رفع مشکلات الکتریکی.</p>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="year3">
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-project-diagram"></i> پروژه نهایی</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۱۲۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم دوم</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">اجرای یک پروژه عملی کامل شامل طراحی، نصب و راه‌اندازی سیستم‌های برق صنعتی.</p>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="workshops">
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-laptop-code"></i> کارگاه PLC</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۹۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> سال آخر</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">آموزش تخصصی برنامه‌نویسی PLC و کار با نرم‌افزارهای مرتبط.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-cogs"></i> کارگاه اتوماسیون صنعتی</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۸۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> سال دوم</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">آموزش اصول اتوماسیون صنعتی، کار با سنسورها، موتورها و سیستم‌های کنترل.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-tools"></i> کارگاه تعمیرات برق صنعتی</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۷۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> سال دوم</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">آموزش عملی تعمیرات سیستم‌های برق صنعتی، عیب‌یابی و رفع مشکلات الکتریکی.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-chart-pie"></i> کارگاه تحلیل سیستم‌های برق</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۸۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> سال سوم</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">تحلیل سیستم‌های برق صنعتی، بررسی عملکرد و بهینه‌سازی سیستم‌های الکتریکی.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Equipment Section -->
+    <section id="equipment" class="equipment-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">تجهیزات و امکانات</h2>
+            <p class="section-subtitle" data-aos="fade-up">هنرستان ما مجهز به پیشرفته‌ترین امکانات آموزشی در زمینه برق صنعتی است</p>
+            
+            <div class="equipment-grid">
+                <div class="equipment-card" data-aos="fade-up">
+                    <div class="equipment-image">
+                        <img src="images/electrical-lab1.jpg" alt="آزمایشگاه برق صنعتی">
+                    </div>
+                    <div class="equipment-info">
+                        <h3 class="equipment-title">آزمایشگاه برق صنعتی</h3>
+                        <p class="equipment-desc">مجهز به تجهیزات پیشرفته برای آموزش عملی برق صنعتی، شامل تابلوهای برق، PLC و سیستم‌های کنترل.</p>
+                    </div>
+                </div>
+                
+                <div class="equipment-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="equipment-image">
+                        <img src="images/electrical-lab2.jpg" alt="کارگاه اتوماسیون">
+                    </div>
+                    <div class="equipment-info">
+                        <h3 class="equipment-title">کارگاه اتوماسیون صنعتی</h3>
+                        <p class="equipment-desc">فضای مدرن برای آموزش اتوماسیون صنعتی، کار با سنسورها، موتورها و سیستم‌های کنترل.</p>
+                    </div>
+                </div>
+                
+                <div class="equipment-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="equipment-image">
+                        <img src="images/electrical-lab3.jpg" alt="کتابخانه تخصصی">
+                    </div>
+                    <div class="equipment-info">
+                        <h3 class="equipment-title">کتابخانه تخصصی برق</h3>
+                        <p class="equipment-desc">دارای منابع تخصصی به‌روز در زمینه برق صنعتی، اتوماسیون و کنترل سیستم‌های الکتریکی.</p>
+                    </div>
+                </div>
+                
+                <div class="equipment-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="equipment-image">
+                        <img src="images/electrical-lab4.jpg" alt="اتاق شبیه‌سازی">
+                    </div>
+                    <div class="equipment-info">
+                        <h3 class="equipment-title">اتاق شبیه‌سازی سیستم‌های برق</h3>
+                        <p class="equipment-desc">محیطی شبیه‌سازی شده برای آموزش طراحی و تحلیل سیستم‌های برق صنعتی.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Jobs Section -->
+    <section id="jobs" class="jobs-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">فرصت‌های شغلی</h2>
+            <p class="section-subtitle" data-aos="فade-up">دانش‌آموختگان رشته برق صنعتی می‌توانند در مشاغل متنوع و پردرآمدی مشغول به کار شوند</p>
+            
+            <div class="jobs-list">
+                <div class="job-item" data-aos="fade-up">
+                    <div class="job-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="job-title">تکنسین برق صنعتی</h3>
+                    <p class="job-desc">نصب، راه‌اندازی و تعمیر سیستم‌های برق صنعتی در کارخانه‌ها و صنایع مختلف.</p>
+                    <div class="job-salary">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>میانگین درآمد: ۱۰ تا ۲۰ میلیون تومان</span>
+                    </div>
+                </div>
+                
+                <div class="job-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="job-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="job-title">تکنسین اتوماسیون صنعتی</h3>
+                    <p class="job-desc">کار با سیستم‌های PLC، سنسورها و موتورها در خطوط تولید صنعتی.</p>
+                    <div class="job-salary">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>میانگین درآمد: ۱۲ تا ۲۵ میلیون تومان</span>
+                    </div>
+                </div>
+                
+                <div class="job-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="job-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="job-title">تعمیرکار سیستم‌های برق</h3>
+                    <p class="job-desc">عیب‌یابی و تعمیر سیستم‌های برق صنعتی در کارخانه‌ها و صنایع.</p>
+                    <div class="job-salary">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>میانگین درآمد: ۱۵ تا ۳۰ میلیون تومان</span>
+                    </div>
+                </div>
+                
+                <div class="job-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="job-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3 class="job-title">سرپرست فنی</h3>
+                    <p class="job-desc">مدیریت و نظارت بر سیستم‌های برق صنعتی در کارخانه‌ها و صنایع بزرگ.</p>
+                    <div class="job-salary">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>میانگین درآمد: ۲۰ تا ۴۰ میلیون تومان</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Instructors Section -->
+    <section id="instructors" class="instructors-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">اساتید برجسته</h2>
+            <p class="section-subtitle" data-aos="fade-up">تدریس توسط متخصصان باتجربه و فعال در صنعت برق صنع            <p class="section-subtitle" data-aos="fade-up">تدریس توسط متخصصان باتجربه و فعال در صنعت برق صنعتی</p>
+            
+            <div class="instructors-grid">
+                <div class="instructor-card" data-aos="fade-up">
+                    <div class="instructor-image">
+                        <img src="images/instructor1.jpg" alt="استاد برق صنعتی">
+                        <div class="instructor-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-telegram"></i></a>
+                        </div>
+                    </div>
+                    <div class="instructor-info">
+                        <h3 class="instructor-name">دکتر رضا محمدی</h3>
+                        <div class="instructor-position">مدرس ارشد برق صنعتی</div>
+                        <p class="instructor-bio">دکترای برق صنعتی با ۱۵ سال سابقه آموزش و تجربه عملی به عنوان مدیر فنی در شرکت‌های بزرگ، مشاور فنی و عضو انجمن مهندسان برق.</p>
+                    </div>
+                </div>
+                
+                <div class="instructor-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="instructor-image">
+                        <img src="images/instructor2.jpg" alt="استاد برق صنعتی">
+                        <div class="instructor-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-telegram"></i></a>
+                        </div>
+                    </div>
+                    <div class="instructor-info">
+                        <h3 class="instructor-name">خانم مهندس زهرا کریمی</h3>
+                        <div class="instructor-position">متخصص اتوماسیون صنعتی</div>
+                        <p class="instructor-bio">کارشناس ارشد مهندسی برق، مسلط به سیستم‌های PLC و اتوماسیون صنعتی، پیاده‌ساز سیستم‌های کنترل در صنایع بزرگ.</p>
+                    </div>
+                </div>
+                
+                <div class="instructor-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="instructor-image">
+                        <img src="images/instructor3.jpg" alt="استاد برق صنعتی">
+                        <div class="instructor-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-telegram"></i></a>
+                        </div>
+                    </div>
+                    <div class="instructor-info">
+                        <h3 class="instructor-name">آقای حسینی</h3>
+                        <div class="instructor-position">متخصص تعمیرات برق صنعتی</div>
+                        <p class="instructor-bio">حسابدار رسمی با ۲۰ سال سابقه در سازمان امور مالیاتی و موسسات حسابرسی، مشاور مالیاتی شرکت‌های بزرگ و مدرس دوره‌های تخصصی مالیات.</p>
+                    </div>
+                </div>
+                
+                <div class="instructor-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="instructor-image">
+                        <img src="images/instructor4.jpg" alt="استاد برق صنعتی">
+                        <div class="instructor-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-telegram"></i></a>
+                        </div>
+                    </div>
+                    <div class="instructor-info">
+                        <h3 class="instructor-name">خانم مهندس جعفری</h3>
+                        <div class="instructor-position">متخصص سیستم‌های کنترل</div>
+                        <p class="instructor-bio">کارشناس ارشد مهندسی برق، متخصص در زمینه سیستم‌های کنترل صنعتی، مشاور فنی شرکت‌های تولیدی و مدرس دانشگاه.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title" data-aos="fade-up">آینده شغلی خود را با تخصص برق صنعتی تضمین کنید</h2>
+            <p class="cta-text" data-aos="fade-up">با تحصیل در رشته برق صنعتی، مهارت‌های کاربردی و عملی را بیاموزید و برای ورود به بازار کار آماده شوید.</p>
+            <div data-aos="fade-up">
+                <a href="index.html" class="btn btn-primary">ثبت نام آنلاین</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer would go here -->
+    
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+        
+        // Tab functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons and contents
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Show corresponding content
+                    const target = this.getAttribute('data-target');
+                    document.getElementById(target).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
